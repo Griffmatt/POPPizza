@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title src="img/pieceofpielogo">POP! Pizza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/pop.css">
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top boomer">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="img/pieceofpielogo.png" height="40" width="40"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#popPizzaNavbar" aria-controls="#popPizzaNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="popPizzaNavbar">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Order Online</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="randomPizza.html">Random Pizza</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="giftcard.html">Gift Cards</a>
+              </li>
+            </ul>
+            <span class="navbar-text ml-auto">
+              <a role="button" data-toggle="modal" data-target="#loginModal">Login</a>
+            </span>
+          </div>
+        </div>
+      </nav>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h1>POP! Pizza</h1>
+            </div>
+            <div class="col text-center">
+                <p>Established 2021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="loginModal" class="modal fade boomer" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="submit" class="btn btn-dark btn-sm ml-auto">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <div class="container">
+      <div class="row" id="reservations">
+        <div class="col">
+          <h3>Make A Reservation</h3>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <form>
+          <div class="form-group row">
+              <label for="resDate" class="col-md-3 col-form-label">Select A Date</label>
+              <div class="col-md-5">               
+                <input type="date" class="form-control" id="resDate" name="resDate">
+              </div>          
+          </div>
+          <div class="form-group row">
+              <label for="resTime" class="col-md-3 col-form-label">Select A Time</label>
+              <div class="col-md-5">  
+                <input type="time" class="form-control" id="resTime" name="resTime">
+              </div>
+          </div> 
+          <div class="form-group row">
+            <label for="numOfGuests" class="col-md-3 col-form-label">Amount Of Guests</label>
+            <div class="col-md-5">  
+              <input type="number" min="0" class="form-control" id="numOfGuests" name="numOfGuests">
+            </div>
+          </div>
+          <div class="form-group row">           
+            <div class="offset-md-2 col-md-10 text-right">
+                <a class="btn btn-dark" href="#">Confirm Reservation</a>
+            </div>
+          </div>
+        </form>
+      </div>     
+      <div class="row">
+        <div class="col">
+            <h3>Contact Us</h3>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-sm-4">
+            <h5>Our Address</h5>
+            <address>
+                42 pizza St<br />
+                somewhere in the world, 00000<br />
+                The World
+            </address>
+        </div>
+        <div class="col">
+            <a role="button" class="btn btn-link" href="#"><i class="fa fa-phone"></i> (###)###-####</a><br />
+            <a role="button" class="btn btn-link" href="#"><i class="fa fa-envelope-o"></i> support@email.com</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+            <h3>Leave A Review</h3>
+        </div>
+        <div class="col-md-10">
+            <form>
+                <div class="form-group row">
+                    <label for="name" class="col-md-2 col-form-label">Name</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name"/>
+                    </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col">
+                    Overall Rating
+                  </div>
+                  <div class="col-10">                      
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" id="ratingOne" name="contactRadios" value="1" />
+                        <label for="ratingOne" class="form-check-label">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" id="ratingTwo" name="contactRadios" value="2" />
+                        <label for="ratingTwo" class="form-check-label">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input type="radio" class="form-check-input" id="ratingThree" name="contactRadios" value="3" />
+                      <label for="ratingThree" class="form-check-label">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" id="ratingFour" name="contactRadios" value="4" />
+                        <label for="ratingFour" class="form-check-label">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input type="radio" class="form-check-input" id="ratingFive" name="contactRadios" value="5" />
+                      <label for="ratingFive" class="form-check-label">5</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                    <label for="review" class="col-md-2 col-form-label">Your Review</label>
+                    <div class="col-md-10">
+                        <textarea class="form-control" id="review" name="review" rows="8"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="offset-md-2 col-md-10 text-right">
+                        <button type="submit" class="btn btn-dark">Send Review</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+      </div>     
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row boomer">
+          <div class="col mt-3">
+            <ul class="list-unstyled links list-inline text-center">
+              <li class="list-inline-item"><a href="menu.html">Menu</a></li>
+              <li class="list-inline-item"><a href="about.html">About</a></li>
+              <li class="list-inline-item"><a href="#reservations">Reservations</a></li>
+              <li class="list-inline-item"><a href="giftcard.html#checkBalance">Check Balance</a></li>
+            </ul> 
+          </div>    
+        </div>
+        <div class="row">
+            <div class="col">
+              <ul class="list-unstyled links list-inline text-center">
+                <li class="list-inline-item"><a class="btn btn-social-icon" href="http://instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a class="btn btn-social-icon" href="http://facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="btn btn-social-icon" href="http://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+              </ul>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <p>© 2021 POP! PIZZA. ALL RIGHTS RESERVED</p>
+          </div>
+        </div>
+    </div>
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/pop.js"></script>
+  </body>
+</html>

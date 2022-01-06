@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "boomer";
+  src: url(../fonts/boomer.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+.jumbotron {
+    margin: 0px;
+    padding: 25px;
+    background: url("../img/jumbotron.jpg") no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+h1 {
+    color: white;
+    font-family: 'boomer', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+}
+h3 {
+    font-family: 'boomer', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+}
+header p{
+  color: white;
+  font-family:monospace;
+  font-weight: 100;
+}
+footer {
+    background-color: #3b3b3b;
+    color: white;
+}
+footer p {
+  color: #a7a7a7;
+}
+body {
+    background-color: #f3f2f2;
+}
+.navbar {
+    background: #3b3b3b
+}
+.links a {
+  display: inline-block;
+  color: white;
+  padding:15px;
+}
+.links a:hover {
+  background-color: #111111;
+  text-decoration: none;
+  color: inherit;
+}
+.boomer {
+  font-family:  'boomer', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 100;
+}
+.modal-header{
+  background-color: #3b3b3b;
+  color: white;
+}
+.close{
+  color: white;
+  opacity: 1;
+}
+.close:hover {
+  color: white;
+}
+.card-header{
+  background: #111111;
+  color: white;
+}
+.btn-link {
+  color:#111111
+}
+dt {
+  font-weight: 100;
+}
+.container {
+  padding-top: .5rem!important;
+  padding-bottom: .5rem !important;
+  
+}
+hr {
+  margin-top:.1rem;
+}
+.card-title {
+  font-family:  'boomer', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 100;
+}
+.checkMargin {
+  margin-left: .25rem;
+}
+
+
+.base {
+ position: relative;
+ width: 100%;
+ height: auto;
+}
+
+.toppings{
+ position: absolute;
+ width: 100%;
+ height: auto;
+ left: 0;
+ margin-bottom: .5rem;
+}
+
+
+  

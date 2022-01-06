@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title src="img/pieceofpielogo">POP! Pizza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/pop.css">
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top boomer">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="img/pieceofpielogo.png" height="40" width="40"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#popPizzaNavbar" aria-controls="#popPizzaNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="popPizzaNavbar">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Order Online</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Random Pizza</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="giftcard.html">Gift Cards</a>
+              </li>
+            </ul>
+            <span class="navbar-text ml-auto">
+              <a role="button" data-toggle="modal" data-target="#loginModal">Login</a>
+            </span>
+          </div>
+        </div>
+      </nav>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h1>POP! Pizza</h1>
+            </div>
+            <div class="col text-center">
+                <p>Established 2021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="loginModal" class="modal fade boomer" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="submit" class="btn btn-dark btn-sm ml-auto">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <H3>Random Pizza</H3>
+            <p>Cant devide which toppings to get? Enter your preferences and click below to get a random 3 topping pizza!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h6>Toppings</h6>
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">Pepperoni,</li>
+              <li class="list-inline-item">Ham,</li>
+              <li class="list-inline-item">Hamburg,</li>
+              <li class="list-inline-item">Sausage,</li>
+              <li class="list-inline-item">Peppers,</li>
+              <li class="list-inline-item">Onions,</li>
+              <li class="list-inline-item">Mushrooms,</li>
+              <li class="list-inline-item">Jalapeños</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6">
+            <h6>Premium Toppings</h6>
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">Chicken,</li>
+              <li class="list-inline-item">Bacon,</li>
+              <li class="list-inline-item">Eggplant</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <form>
+              <div class="form-row">
+                <div class="col-md-3 col-lg-2 col-6">
+                  <div class="form-check">
+                    <label class="form-check-label" for="onlyVeg">Only Vegtables</label>
+                    <input type="checkbox" class="form-check-input check checkMargin" id="onlyVeg" name="only">
+                    <label class="form-check-label" for="onlyMeat">Only Meat</label>
+                    <input type="checkbox" class="form-check-input check checkMargin" id="onlyMeat" name="only">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-check">
+                    <label class="form-check-label" for="premium">Premium Toppings</label>
+                    <input type="checkbox" class="form-check-input checkMargin" name="premium" id="premium">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col text-center">
+            <Button class="btn btn-dark" id="randomPizzaBtn" onclick="randomPizzaTop()">Click Here To Make A Random Pizza</Button>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12 col-md text-center">
+            <h3 id="firstTop"></h3>
+          </div>
+          <div class="col-12 col-md text-center">
+            <h3 id="secondTop"></h3>
+          </div>
+          <div class="col-12 col-md text-center">
+            <h3 id="thirdTop"></h3>
+          </div>
+        </div>
+        <div class="row pizzaImage">
+          <div class="col col-lg-6 offset-lg-3">
+            <img src="img/crust.png" alt="Plain Cheese Pizza" class="base">
+            <img src="img/bacon.png" alt="Bacon" class="toppings" id="bacon" hidden>        
+            <img src="img/chicken.png" alt="Chicken" class="toppings" id="chicken" hidden>
+            <img src="img/eggplant.png" alt="Eggplant" class="toppings" id="eggplant" hidden>
+            <img src="img/ham.png" alt="Ham" class="toppings" id="ham" hidden>
+            <img src="img/hamburg.png" alt="Hamburg" class="toppings" id="hamburg" hidden>
+            <img src="img/jalapeno.png" alt="Jalapeno" class="toppings" id="jalapeno" hidden>
+            <img src="img/mushrooms.png" alt="Mushrooms" class="toppings" id="mushrooms" hidden>
+            <img src="img/onions.png" alt="Onions" class="toppings" id="onions" hidden>
+            <img src="img/pepperoni.png" alt="Pepperoni" class="toppings" id="pepperoni" hidden>
+            <img src="img/peppers.png" alt="Peppers" class="toppings" id="peppers" hidden>
+            <img src="img/sausage.png" alt="Sausage" class="toppings" id="sausage" hidden>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="row boomer">
+            <div class="col mt-3">
+              <ul class="list-unstyled links list-inline text-center">
+                <li class="list-inline-item"><a href="menu.html">Menu</a></li>
+                <li class="list-inline-item"><a href="about.html">About</a></li>
+                <li class="list-inline-item"><a href="contact.html#reservations">Reservations</a></li>
+                <li class="list-inline-item"><a href="giftcard.html#checkBalance">Check Balance</a></li>
+              </ul> 
+            </div>    
+          </div>
+          <div class="row">
+              <div class="col">
+                <ul class="list-unstyled links list-inline text-center">
+                  <li class="list-inline-item"><a class="btn btn-social-icon" href="http://instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                  <li class="list-inline-item"><a class="btn btn-social-icon" href="http://facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                  <li class="list-inline-item"><a class="btn btn-social-icon" href="http://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col text-center">
+              <p>© 2021 POP! PIZZA. ALL RIGHTS RESERVED</p>
+            </div>
+          </div>
+      </div>
+      </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/pop.js"></script>
+  </body>
+</html>

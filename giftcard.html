@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title src="img/pieceofpielogo">POP! Pizza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/pop.css">
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top boomer">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="img/pieceofpielogo.png" height="40" width="40"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#popPizzaNavbar" aria-controls="#popPizzaNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="popPizzaNavbar">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Order Online</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="randomPizza.html">Random Pizza</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Gift Cards</a>
+              </li>
+            </ul>
+            <span class="navbar-text ml-auto">
+              <a role="button" data-toggle="modal" data-target="#loginModal">Login</a>
+            </span>
+          </div>
+        </div>
+      </nav>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h1>POP! Pizza</h1>
+            </div>
+            <div class="col text-center">
+                <p>Established 2021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="loginModal" class="modal fade boomer" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="submit" class="btn btn-dark btn-sm ml-auto">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3">
+          <div class="card">
+            <div class="card-header">
+              <h3>Who is the gift card for?</h3>
+              <ul class="nav nav-tabs card-header-tabs links text-center" id="giftCardFor" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#forFriend" role="tab">For Friend</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"  href="#forYou" role="tab">For You</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+               <div class="tab-content">
+                <div class="tab-pane active" id="forFriend" role="tabpanel">
+                  <form>
+                    <div class="form-group">
+                      <label for="theirName">Their Name</label>
+                      <input type="text" class="form-control" name="theirName" id="theirName">
+                    </div>
+                    <div class="form-group">
+                      <label for="#yourName">Your Name</label>
+                      <input type="text" class="form-control" name="yourName" id="yourName">
+                    </div>
+                    <div class="text-right">
+                      <a class="btn btn-dark" href="giftcardamount.html">Choose Amount</a>
+                    </div>
+                  </form>
+                </div>
+                <div class="tab-pane col-12 text-center" id="forYou" role="tabpanel">  
+                  <a class="btn btn-dark" href="giftcardamount.html">Choose Amount</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">                                
+          <form>
+            <div class="container" id="checkBalance">              
+              <div class="form-group">
+                <div class="col-12 col-sm-6 offset-sm-3 col-lg-6 offset-lg-3"> 
+                  <h3>Check Balance</h3>
+                  <input type="email" class="form-control" id="cardNumber">                
+                  <div class="text-right mt-1">
+                    <a role="button" type ="submit" data-toggle="modal" data-target="#balance" class="btn btn-dark" data-dismiss="modal">Submit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>                           
+         </div>
+        </div>
+     </div>           
+    <div id="balance" class="modal fade boomer text-center" role="dialog">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h3 class="modal-title">Current Balance</h3>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <div class="container-fluid">
+                      <dl>
+                        <dt>Your Balance is: </dt>
+                        <dd>545435</dd>
+                      </dl>                           
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row boomer">
+          <div class="col mt-3">
+            <ul class="list-unstyled links list-inline text-center">
+              <li class="list-inline-item"><a href="menu.html">Menu</a></li>
+              <li class="list-inline-item"><a href="about.html">About</a></li>
+              <li class="list-inline-item"><a href="contact.html#reservations">Reservations</a></li>
+              <li class="list-inline-item"><a href="#checkBalance">Check Balance</a></li>
+            </ul> 
+          </div>    
+        </div>
+        <div class="row">
+            <div class="col">
+              <ul class="list-unstyled links list-inline text-center">
+                <li class="list-inline-item"><a class="btn btn-social-icon" href="http://instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a class="btn btn-social-icon" href="http://facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="btn btn-social-icon" href="http://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+              </ul>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <p>© 2021 POP! PIZZA. ALL RIGHTS RESERVED</p>
+          </div>
+        </div>
+    </div>
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/pop.js"></script>
+  </body>
+</html>
